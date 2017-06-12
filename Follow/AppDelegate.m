@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RLMapController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,8 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[RLMapController alloc] initWithNibName:@"RLMapController" bundle:nil]];
     [self.window makeKeyAndVisible];
     return YES;
 }

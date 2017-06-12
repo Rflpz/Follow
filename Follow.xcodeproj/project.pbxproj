@@ -12,6 +12,8 @@
 		8BEA04871EEE49B3006E81CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA04861EEE49B3006E81CF /* AppDelegate.m */; };
 		8BEA04891EEE49B3006E81CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA04881EEE49B3006E81CF /* Assets.xcassets */; };
 		8BEA048C1EEE49B3006E81CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA048A1EEE49B3006E81CF /* LaunchScreen.storyboard */; };
+		8BEA049B1EEE4CF1006E81CF /* RLMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA04991EEE4CF1006E81CF /* RLMapController.m */; };
+		8BEA049C1EEE4CF1006E81CF /* RLMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		8BEA04881EEE49B3006E81CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BEA048B1EEE49B3006E81CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BEA048D1EEE49B3006E81CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEA04981EEE4CF1006E81CF /* RLMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMapController.h; sourceTree = "<group>"; };
+		8BEA04991EEE4CF1006E81CF /* RLMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMapController.m; sourceTree = "<group>"; };
+		8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMapController.xib; sourceTree = "<group>"; };
 		BDEFC4836C805987A574B250 /* Pods-Follow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Follow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Follow/Pods-Follow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +65,9 @@
 		8BEA04811EEE49B3006E81CF /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				8BEA04851EEE49B3006E81CF /* AppDelegate.h */,
-				8BEA04861EEE49B3006E81CF /* AppDelegate.m */,
+				8BEA04961EEE4CD3006E81CF /* ViewControllers */,
+				8BEA04951EEE4CC8006E81CF /* Resources-Outside */,
+				8BEA04941EEE4CC0006E81CF /* App Delegate */,
 				8BEA04881EEE49B3006E81CF /* Assets.xcassets */,
 				8BEA048A1EEE49B3006E81CF /* LaunchScreen.storyboard */,
 				8BEA048D1EEE49B3006E81CF /* Info.plist */,
@@ -76,6 +82,40 @@
 				8BEA04831EEE49B3006E81CF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BEA04941EEE4CC0006E81CF /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA04851EEE49B3006E81CF /* AppDelegate.h */,
+				8BEA04861EEE49B3006E81CF /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		8BEA04951EEE4CC8006E81CF /* Resources-Outside */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Resources-Outside";
+			sourceTree = "<group>";
+		};
+		8BEA04961EEE4CD3006E81CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA04971EEE4CDC006E81CF /* RLMap */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8BEA04971EEE4CDC006E81CF /* RLMap */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA04981EEE4CF1006E81CF /* RLMapController.h */,
+				8BEA04991EEE4CF1006E81CF /* RLMapController.m */,
+				8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */,
+			);
+			name = RLMap;
 			sourceTree = "<group>";
 		};
 		922D464BBDD44165F262B010 /* Pods */ = {
@@ -158,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEA04891EEE49B3006E81CF /* Assets.xcassets in Resources */,
+				8BEA049C1EEE4CF1006E81CF /* RLMapController.xib in Resources */,
 				8BEA048C1EEE49B3006E81CF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEA04871EEE49B3006E81CF /* AppDelegate.m in Sources */,
+				8BEA049B1EEE4CF1006E81CF /* RLMapController.m in Sources */,
 				8BEA04841EEE49B3006E81CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +415,7 @@
 				8BEA04921EEE49B3006E81CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
