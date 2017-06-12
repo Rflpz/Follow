@@ -14,6 +14,8 @@
 		8BEA048C1EEE49B3006E81CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA048A1EEE49B3006E81CF /* LaunchScreen.storyboard */; };
 		8BEA049B1EEE4CF1006E81CF /* RLMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA04991EEE4CF1006E81CF /* RLMapController.m */; };
 		8BEA049C1EEE4CF1006E81CF /* RLMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */; };
+		8BEA049E1EEE4DB1006E81CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA049D1EEE4DB1006E81CF /* MapKit.framework */; };
+		8BEA04A01EEE4DB6006E81CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA049F1EEE4DB6006E81CF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8BEA04981EEE4CF1006E81CF /* RLMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMapController.h; sourceTree = "<group>"; };
 		8BEA04991EEE4CF1006E81CF /* RLMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMapController.m; sourceTree = "<group>"; };
 		8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMapController.xib; sourceTree = "<group>"; };
+		8BEA049D1EEE4DB1006E81CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BEA049F1EEE4DB6006E81CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BDEFC4836C805987A574B250 /* Pods-Follow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Follow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Follow/Pods-Follow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEA04A01EEE4DB6006E81CF /* CoreLocation.framework in Frameworks */,
+				8BEA049E1EEE4DB1006E81CF /* MapKit.framework in Frameworks */,
 				4712DD0E65D2723D604DEA14 /* libPods-Follow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +136,8 @@
 		CE0D82C69CEB166C3FFB0C19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BEA049F1EEE4DB6006E81CF /* CoreLocation.framework */,
+				8BEA049D1EEE4DB1006E81CF /* MapKit.framework */,
 				23B7DF0A6C6FF4EC1073A652 /* libPods-Follow.a */,
 			);
 			name = Frameworks;
