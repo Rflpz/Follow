@@ -16,6 +16,7 @@
 		8BEA049C1EEE4CF1006E81CF /* RLMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */; };
 		8BEA049E1EEE4DB1006E81CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA049D1EEE4DB1006E81CF /* MapKit.framework */; };
 		8BEA04A01EEE4DB6006E81CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA049F1EEE4DB6006E81CF /* CoreLocation.framework */; };
+		8BEA04A41EEE4F28006E81CF /* RLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA04A31EEE4F28006E81CF /* RLLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMapController.xib; sourceTree = "<group>"; };
 		8BEA049D1EEE4DB1006E81CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8BEA049F1EEE4DB6006E81CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8BEA04A21EEE4F28006E81CF /* RLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLLocation.h; sourceTree = "<group>"; };
+		8BEA04A31EEE4F28006E81CF /* RLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLLocation.m; sourceTree = "<group>"; };
 		BDEFC4836C805987A574B250 /* Pods-Follow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Follow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Follow/Pods-Follow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +112,7 @@
 		8BEA04961EEE4CD3006E81CF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BEA04A11EEE4EE1006E81CF /* RLHelper */,
 				8BEA04971EEE4CDC006E81CF /* RLMap */,
 			);
 			name = ViewControllers;
@@ -122,6 +126,15 @@
 				8BEA049A1EEE4CF1006E81CF /* RLMapController.xib */,
 			);
 			name = RLMap;
+			sourceTree = "<group>";
+		};
+		8BEA04A11EEE4EE1006E81CF /* RLHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA04A21EEE4F28006E81CF /* RLLocation.h */,
+				8BEA04A31EEE4F28006E81CF /* RLLocation.m */,
+			);
+			name = RLHelper;
 			sourceTree = "<group>";
 		};
 		922D464BBDD44165F262B010 /* Pods */ = {
@@ -268,6 +281,7 @@
 			files = (
 				8BEA04871EEE49B3006E81CF /* AppDelegate.m in Sources */,
 				8BEA049B1EEE4CF1006E81CF /* RLMapController.m in Sources */,
+				8BEA04A41EEE4F28006E81CF /* RLLocation.m in Sources */,
 				8BEA04841EEE49B3006E81CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
