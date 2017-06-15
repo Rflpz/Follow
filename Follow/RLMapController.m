@@ -8,7 +8,7 @@
 
 #import "RLMapController.h"
 #import "RLLocation.h"
-
+#import "RLManager.h"
 @import MapKit;
 
 @interface RLMapController ()
@@ -20,8 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view layoutIfNeeded];
     self.title = @"MAP";
     _rlLocation = [[RLLocation alloc] init];
+    [[RLManager sharedInstance] customizeNavigationControllerOfController:self];
 }
 
 @end

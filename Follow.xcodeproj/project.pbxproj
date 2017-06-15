@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4712DD0E65D2723D604DEA14 /* libPods-Follow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7DF0A6C6FF4EC1073A652 /* libPods-Follow.a */; };
+		8B58E65F1EF2404E003557CB /* RLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B58E65E1EF2404E003557CB /* RLManager.m */; };
 		8BEA04841EEE49B3006E81CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA04831EEE49B3006E81CF /* main.m */; };
 		8BEA04871EEE49B3006E81CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA04861EEE49B3006E81CF /* AppDelegate.m */; };
 		8BEA04891EEE49B3006E81CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEA04881EEE49B3006E81CF /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		23B7DF0A6C6FF4EC1073A652 /* libPods-Follow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Follow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		385BD321930BE8DB64968252 /* Pods-Follow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Follow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Follow/Pods-Follow.debug.xcconfig"; sourceTree = "<group>"; };
+		8B58E65D1EF2404E003557CB /* RLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLManager.h; sourceTree = "<group>"; };
+		8B58E65E1EF2404E003557CB /* RLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLManager.m; sourceTree = "<group>"; };
 		8BEA047F1EEE49B3006E81CF /* Follow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Follow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEA04831EEE49B3006E81CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BEA04851EEE49B3006E81CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B58E65B1EF24030003557CB /* RLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA04A21EEE4F28006E81CF /* RLLocation.h */,
+				8BEA04A31EEE4F28006E81CF /* RLLocation.m */,
+			);
+			name = RLLocation;
+			sourceTree = "<group>";
+		};
+		8B58E65C1EF2403A003557CB /* RLManager */ = {
+			isa = PBXGroup;
+			children = (
+				8B58E65D1EF2404E003557CB /* RLManager.h */,
+				8B58E65E1EF2404E003557CB /* RLManager.m */,
+			);
+			name = RLManager;
+			sourceTree = "<group>";
+		};
 		8BEA04761EEE49B3006E81CF = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +152,8 @@
 		8BEA04A11EEE4EE1006E81CF /* RLHelper */ = {
 			isa = PBXGroup;
 			children = (
-				8BEA04A21EEE4F28006E81CF /* RLLocation.h */,
-				8BEA04A31EEE4F28006E81CF /* RLLocation.m */,
+				8B58E65C1EF2403A003557CB /* RLManager */,
+				8B58E65B1EF24030003557CB /* RLLocation */,
 			);
 			name = RLHelper;
 			sourceTree = "<group>";
@@ -279,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B58E65F1EF2404E003557CB /* RLManager.m in Sources */,
 				8BEA04871EEE49B3006E81CF /* AppDelegate.m in Sources */,
 				8BEA049B1EEE4CF1006E81CF /* RLMapController.m in Sources */,
 				8BEA04A41EEE4F28006E81CF /* RLLocation.m in Sources */,
